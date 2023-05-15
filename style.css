@@ -24,3 +24,8 @@ body {
 a {
     color: red;
 }
+
+.grr {
+    width: 35vw;
+    background-color: aliceblue;
+}
