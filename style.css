@@ -18,7 +18,7 @@ body {
   width: 80vw;
   height: 50vh;
   border: black 2px solid;
-  background-color: rgba(240, 255, 255, 0.3);
+  background-color: rgba(3, 31, 31, 0.7);
 }
 
 a {
@@ -42,4 +42,13 @@ a {
 #pID {
   margin-top: 5rem;
   font-size: 2rem;
+}
+
+a {
+  font-size: 2rem;
+}
+
+h1 {
+  color: white;
+  background-color: aquamarine;
 }
