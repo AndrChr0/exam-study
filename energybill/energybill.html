@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        img{
+            position: absolute;
+            margin-top: 10vh;
+        }
+        .energybill__ripped{
+            display: none;
+        }
+
+        .container{
+            max-width: 30%;
+            margin: 0 auto;
+        }
+        button{
+            position: absolute;
+            margin-top: 10vh;
+            margin-left: 20vw;
+            
+        }
+
+        .msg{
+            display: none;
+            position: absolute;
+            bottom: 0;
+            margin-bottom: 10vh;
+            font-size: 50px;
+            outline: 1px solid red;
+
+        }
+
+
+        p {
+            animation: 1s ease-in-out infinite color-change;
+        }
+
+        @keyframes color-change {
+            0% {
+                background-color: teal;
+            }
+            20% {
+                background-color: gold;
+            }
+            40% {
+                background-color: indianred;
+            }
+            60% {
+                background-color: violet;
+            }
+            80% {
+                background-color: green;
+            }
+            100% {
+                background-color: teal;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="energybill__whole"><img src="energybill.png" alt=""></div>
+        <div class="energybill__ripped"><img src="energybill-ripped.png" alt=""></div>
+    </div>  
+
+    <button>rip it</button>
+
+    <p class="msg">It is illegal to sell guns in Norway. Your website implementation is fine, however the ethical part is really problematic. I will forward this concern further to your study program leaders.</p>
+
+
+    <script src="ebScript.js"></script>
+    
+</body>
+</html>
