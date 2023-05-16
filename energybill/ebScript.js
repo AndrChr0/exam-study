@@ -9,3 +9,18 @@ btn.addEventListener('click', () => {
     EB.style.display = 'none';
     msg.style.display = 'inline';
 })
+
+
+function checkUsername(){
+    const feedback = document.querySelector('.feedback');
+    if (this.value.length > 0  && this.value.length <=5) {
+        feedback.textContent = 'minimum 5 characters'
+    } 
+    else {
+        feedback.textContent = '';
+    }
+}
+
+const username = document.querySelector('#username')
+
+username.addEventListener('input', checkUsername);
