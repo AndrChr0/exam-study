@@ -40,7 +40,7 @@ a {
 }
 
 #pID {
-  margin-top: 5rem;
+  /* margin-top: 5rem; */
   font-size: 2rem;
 }
 
@@ -51,4 +51,8 @@ a {
 h1 {
   color: white;
   background-color: aquamarine;
+}
+
+img {
+  max-height: 20vh;
 }
