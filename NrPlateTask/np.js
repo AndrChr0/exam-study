@@ -3,6 +3,9 @@ const btn = document.querySelector("#btnID");
 const textBox = document.querySelector("#textID");
 const textP = document.querySelector("#pID");
 textP.textContent = "Nerd, du har ikke skreve noe enda";
+
+let randomNumber = Math.floor(Math.random() * 5) + 1;
+
 input.addEventListener("input", () => {
   if (input.value === "") {
     return "";
@@ -40,7 +43,7 @@ textP.after(newP);
 
 function scrollWatch() {
   let scrollVal = window.scrollY;
-  newP.textContent = `You have scrolled ${scrollVal} `;
+  newP.textContent = `You have scrolled ${scrollVal}px`;
 }
 
 window.addEventListener("scroll", scrollWatch);
