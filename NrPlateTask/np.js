@@ -22,3 +22,25 @@ function nrPlateGen() {
 }
 
 btn.addEventListener("click", nrPlateGen);
+
+let bodyVar = document.querySelector("body");
+bodyVar.style.height = "200vh";
+
+document.body.addEventListener("click", () => {
+  if (window.innerWidth <= 1000) {
+    document.body.style.backgroundColor = "red";
+  } else {
+    document.body.style.backgroundColor = "white";
+  }
+});
+
+let newP = document.createElement("p");
+newP.style.position = "fixed";
+textP.after(newP);
+
+function scrollWatch() {
+  let scrollVal = window.scrollY;
+  newP.textContent = `You have scrolled ${scrollVal} `;
+}
+
+window.addEventListener("scroll", scrollWatch);
