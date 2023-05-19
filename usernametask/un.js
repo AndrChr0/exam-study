@@ -18,7 +18,13 @@ const msg = document.querySelector("#pID");
 //     msg.textContent = "Submitted";
 //   }
 // });
+if (sessionStorage.getItem("autoSave")) {
+  inputField.value = sessionStorage.getItem("autoSave");
+}
 
+inputField.addEventListener("change", () => {
+  sessionStorage.setItem("autoSave", inputField.value);
+});
 // function method
 
 function checkUN() {
@@ -28,9 +34,10 @@ function checkUN() {
     msg.textContent = "“The username must be 5 characters or more.”"; // if less than 5, textconetent of msg becomes this
   } else {
     // if more than 5, value is set to nothing, text says "submitted"
+    sessionStorage.setItem("value", inputField.value.length);
     inputField.value = "";
     msg.textContent = "Submitted";
-    inputField.disabled = true;
+    // inputField.disabled = true;
   }
 }
 
