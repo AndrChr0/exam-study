@@ -80,3 +80,9 @@ if (machineActive === false) {
 }
 
 console.log(response);
+
+console.log(2 < 5 || 2 < 1);
+
+let val = 0;
+
+val == 10 ? console.log("GG") : console.log("LL");
